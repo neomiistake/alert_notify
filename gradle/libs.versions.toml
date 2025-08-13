@@ -9,6 +9,7 @@ lifecycleRuntimeKtx = "2.8.7"
 activityCompose = "1.10.0"
 composeBom = "2024.04.01"
 cardview = "1.0.0"
+material = "1.12.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -30,6 +31,7 @@ firebase-messaging = { group = "com.google.firebase", name = "firebase-messaging
 google-maps-services = { group = "com.google.android.gms", name = "play-services-maps", version = "18.2.0" }
 google-play-services-location = { group = "com.google.android.gms", name = "play-services-location", version = "21.2.0" }
 androidx-cardview = { group = "androidx.cardview", name = "cardview", version.ref = "cardview" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 # firebase-analytics = { group = "com.google.firebase", name = "firebase-analytics" }
 
 [plugins]
