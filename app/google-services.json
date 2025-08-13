@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "333466710052",
+    "project_id": "danger-detector-notify",
+    "storage_bucket": "danger-detector-notify.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:333466710052:android:40b617eba16fc34d6de8b1",
+        "android_client_info": {
+          "package_name": "com.example.webweb"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB55n6gNiP4hmpfOB8UfpqwFN5x6fU2IqA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
