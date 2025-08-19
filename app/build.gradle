@@ -66,6 +66,13 @@ dependencies {
     implementation libs.androidx.cardview
     implementation platform('com.google.firebase:firebase-bom:33.0.0')
     implementation 'com.google.firebase:firebase-messaging-ktx'
+
+    implementation("com.google.android.gms:play-services-location:21.0.1") // 新增：用於位置服務
+    implementation("com.squareup.okhttp3:okhttp:4.10.0")// 新增：用於 HTTP 請求 (或者你用過的 Retrofit, Volley 也可以)
+    implementation 'com.google.code.gson:gson:2.10.1' // 用於 JSON 處理
+    // 如果你還沒有 Kotlin Coroutines (協程) 依賴，建議加上，方便異步網路請求
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1'
     implementation libs.material
     testImplementation libs.junit
     androidTestImplementation libs.androidx.junit

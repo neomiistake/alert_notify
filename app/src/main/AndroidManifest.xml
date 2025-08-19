@@ -7,9 +7,13 @@
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-
+    <!-- 新增：Android 10 (API 29) 及以上，如果需要在後台獲取位置，需要此權限 -->
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <!-- 新增：Android 9 (API 28) 及以上，使用前台服務需要此權限 -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <application
         android:allowBackup="true"
+        android:usesCleartextTraffic="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
@@ -17,7 +21,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PhoneInfoGetter"
-        tools:targetApi="31">
+        tools:targetApi="31"
+        tools:ignore="ExtraText">
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -36,11 +41,6 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".MapActivity"
-            android:exported="false">
-
-        </activity>
 
         <service
             android:name=".MyFirebaseMessagingService"
@@ -49,6 +49,7 @@
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
+
     </application>
 
 </manifest>
